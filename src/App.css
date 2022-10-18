@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.alert {
+  height: 1rem;
+  text-align: center;
+}
+.main-container {
+  background-color: #2d3047;
+  color: white;
+  padding: 2rem;
+  min-height: 100vh;
+}
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.todo-app {
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px 1px white;
+  min-height: 60vh;
+  width: 30rem;
+  margin: 1rem auto;
+  padding: 1rem 0;
+}
+form {
+  margin: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#todo-input {
+  width: 16rem;
+  height: 2.75rem;
+  padding: 0 1rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid black;
+
+  /* border: 0;
+  outline: 0; */
+}
+.submit-btn {
+  cursor: pointer;
+  z-index: 0;
+  width: 3rem;
+  height: 2.7rem;
+  position: relative;
+  right: 10px;
+  margin-right: 0.25rem;
+  border: 1px solid black;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: white;
+  color: black;
+}
+.btn {
+  z-index: 1;
+}
+select {
+  width: 8rem;
+  height: 2.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  border: 1px solid black;
+
+  color: black;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 1px white;
+}
+.edit-btn,
+.done-btn,
+.delete-btn {
+  cursor: pointer;
+  border: 0;
+  background-color: #2d3047;
+  color: #ffffff;
+  margin-left: 0.25rem;
+  font-size: large;
+}
+.todo-item {
+  min-width: 80%;
+}
+.btn-container {
+  min-width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.clear {
+  width: 6rem;
+  margin: 1rem auto;
+}
+.clear-btn {
+  cursor: pointer;
+  width: 6rem;
+  height: 2rem;
+  margin: 1rem auto;
+}
+
+@media all and (max-width: 600px) {
+  .main-container {
+    height: 90vh;
+  }
+  .todo-app {
+    padding: 0;
+    width: 20rem;
+  }
+  #todo-input {
+    padding: 0.8rem 1rem;
+    height: 2.75rem;
+    width: 8rem;
+  }
+  .submit-btn {
+    width: 3rem;
+    right: 3px;
+  }
+  select {
+    width: 7rem;
+    padding: 0.8rem 0.5rem;
+  }
+  .todo-list {
+    margin: 0.5rem;
+  }
+}
